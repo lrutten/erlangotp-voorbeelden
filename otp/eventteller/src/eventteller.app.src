@@ -1,0 +1,19 @@
+{application, eventteller, [
+    {description, "eventteller applicatie!"},
+    {vsn, "0.1.0"},
+    {modules, []},
+    {registered, [eventteller]},
+    {applications, [
+        kernel,
+        stdlib,
+        runtime_tools,
+        wx,
+        observer,
+        cowboy,
+        erlydtl,
+        eventmanager
+    ]},
+    {mod, {eventteller_app, []}},
+    {env, []}
+]}.
+
