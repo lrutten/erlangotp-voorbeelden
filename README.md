@@ -24,3 +24,8 @@ Dit is een overzicht:
     Dit is de voorgaande applicatie waarin het genereren van de HTML met een
     ErlyDTL template verloopt.
 
+* `otp/eventteller/`
+
+    Dit is de voorgaande applicatie waarin de wachttijd voor de verhoging van de teller
+    met de event-manager wordt gerealiseerd.
+
