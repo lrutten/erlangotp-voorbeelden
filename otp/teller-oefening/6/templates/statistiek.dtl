@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Statistiek</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+  </head>
+  <body>
+     
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Teller</a>
+        </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="/over">Over</a></li>
+            <li class="active"><a href="#">Statistiek</a></li> 
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container">
+      <h1>Statistiek</h1>
+      
+      <h2>Lijst</h2>
+      
+      <table class="table table-striped table-bordered">
+        <thead>
+          <tr>
+            <td>Nummer</td>
+            <td>Tijdstip</td>
+            <td>Teller</td>
+          </tr>
+        </thead>
+        <tbody>
+      {% for stamp in list %}
+         <tr>
+           <td><a href="/timestamp/{{ forloop.counter }}" class="btn btn-default">{{ forloop.counter }}</a></td>
+           <td>{{ stamp.1 }}</td>
+           <td>{{ stamp.2 }}</td>
+         </tr>
+      {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

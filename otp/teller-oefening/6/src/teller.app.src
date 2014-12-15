@@ -1,0 +1,18 @@
+{application, teller, [
+    {description, "Teller applicatie!"},
+    {vsn, "0.1.0"},
+    {modules, []},
+    {registered, [teller]},
+    {applications, [
+        kernel,
+        stdlib,
+        cowboy,
+        erlydtl,
+        runtime_tools,
+        wx,
+        observer
+    ]},
+    {mod, {teller_app, []}},
+    {env, []}
+]}.
+
