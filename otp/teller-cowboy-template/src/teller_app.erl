@@ -14,6 +14,12 @@ start(_Type, _Args) ->
         [{port, 8080}],
         [{env, [{dispatch, Dispatch}]}]
     ),
+
+    M = code:which(index_dtl),
+    io:format("module path ~p~n", [M]),
+    M2 = code:which(cowboy),
+    io:format("module path ~p~n", [M2]),
+
     teller:start().
  
 stop(_State) ->
