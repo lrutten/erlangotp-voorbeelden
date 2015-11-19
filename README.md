@@ -29,3 +29,12 @@ Dit is een overzicht:
     Dit is de voorgaande applicatie waarin de wachttijd voor de verhoging van de teller
     met de event-manager wordt gerealiseerd.
 
+* `otp/collatz/collatz/`
+
+    Dit is het knooppunt dat een iteratie van de Collatz berekening uitvoert.
+
+* `otp/collatz/collatz_verdeler/`
+
+    Dit is de Collatz spelverdeler. Deze zorgt ervoor dat elk nieuw iteratieknooppunt
+    automatisch in de ring opgenomen wordt.
+
