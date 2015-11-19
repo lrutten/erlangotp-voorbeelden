@@ -6,9 +6,6 @@
     {applications, [
         kernel,
         stdlib,
-        runtime_tools,
-        wx,
-        observer,
         cowboy,
         erlydtl,
         eventmanager

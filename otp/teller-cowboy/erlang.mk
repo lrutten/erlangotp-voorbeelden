@@ -16,7 +16,7 @@
 
 ERLANG_MK_FILENAME := $(realpath $(lastword $(MAKEFILE_LIST)))
 
-ERLANG_MK_VERSION = 2.0.0-pre.1-1-g73532c2
+ERLANG_MK_VERSION = 2.0.0-pre.1
 
 # Core configuration.
 
@@ -4140,7 +4140,6 @@ define dep_autopatch_rebar
 endef
 
 define dep_autopatch_rebar.erl
-	application:load(rebar),
 	application:set_env(rebar, log_level, debug),
 	Conf1 = case file:consult("$(call core_native_path,$(DEPS_DIR)/$1/rebar.config)") of
 		{ok, Conf0} -> Conf0;
