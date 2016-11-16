@@ -1,8 +1,0 @@
-<html>
-  <head>
-    <title>Teller!</title>
-  </head>
-  <body>
-    <p>De teller is nu {{ waarde }}.</p>
-  </body>
-</html>
