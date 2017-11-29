@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Teller!</title>
+  </head>
+  <body>
+    <p>De teller is nu {{ waarde }}.</p>
+    <p>De node is  {{ node }}.</p>
+    <p>Nodes:</p>
+    <ul>
+      {% for nod in nodes %}
+        <li>{{ nod }}</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

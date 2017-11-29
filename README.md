@@ -18,3 +18,8 @@ Dit is een overzicht:
     Dit is de voorgaande applicatie waarin het genereren van de HTML met een
     ErlyDTL template verloopt.
 
+
+Dit zijn de Docker voorbeelden:
+
+* [docker/](docker/)
+
