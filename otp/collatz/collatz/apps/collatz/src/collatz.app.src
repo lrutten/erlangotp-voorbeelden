@@ -1,0 +1,17 @@
+{application, collatz, [
+    {description, "Collatz applicatie!"},
+    {vsn, "0.1.0"},
+    {modules, []},
+    {registered, [collatz]},
+    {applications, [
+        kernel,
+        stdlib,
+        runtime_tools,
+        bootstrap,
+        wx,
+        observer
+    ]},
+    {mod, {collatz_app, []}},
+    {env, []}
+]}.
+

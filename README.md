@@ -19,6 +19,10 @@ Dit is een overzicht:
     ErlyDTL template verloopt.
 
 
+Dit is het *Collatz* voorbeeld:
+
+* [otp/collatz/](otp/collatz/)
+
 Dit zijn de Docker voorbeelden:
 
 * [docker/](docker/)
